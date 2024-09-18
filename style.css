@@ -129,7 +129,7 @@ h1 {
     background-color: #FFF;
     border: none;
     color: #1875E8;
-    margin: 50px;
+    margin: 10px;
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;
@@ -178,10 +178,17 @@ h1 {
         padding: 1rem;
     }
 
-    .boton .boton-copiar {
+    .boton  {
         width: 100%;
         font-size: 1.25rem;
         height: 60px;
+    }
+
+    .boton-copiar {
+        width: 100%; /* Hacemos que el botón ocupe todo el ancho en pantallas medianas */
+        font-size: 1.25rem;
+        height: 60px;
+        margin-left: 0; /* Quitamos el margen para que no se desplace a la izquierda */
     }
 
     .texto__parrafo {
@@ -219,6 +226,12 @@ h1 {
 
     .texto__parrafo {
         font-size: 18px;
+    }
+    .boton-copiar {
+        width: 100%; /* Hacemos que el botón ocupe todo el ancho en pantallas pequeñas */
+        font-size: 1rem;
+        height: 50px;
+        margin-left: 0; /* Eliminar el margen izquierdo para que no quede desalineado */
     }
 
     body::before {
