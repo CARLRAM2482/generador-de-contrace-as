@@ -178,7 +178,7 @@ h1 {
         padding: 1rem;
     }
 
-    .boton {
+    .boton .boton-copiar {
         width: 100%;
         font-size: 1.25rem;
         height: 60px;

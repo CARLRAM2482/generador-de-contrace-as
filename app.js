@@ -1,7 +1,6 @@
 let  cantidad = document.getElementById('cantidad');
 let boton = document.getElementById('crear');
 let clave =  document.getElementById('clave');
-let contrasena = document.getElementById('clave').value;
 
 
 //caracteres para generar la contraseña
@@ -33,6 +32,7 @@ for(let i= 0; i < numeroDigitado; i++){
 clave.value = contraseña;
 }
 function copiarContrasena() {
+    let contrasena = document.getElementById('clave').value;
     
     // Verificamos si hay una contraseña generada
     if (contrasena !== "") {
