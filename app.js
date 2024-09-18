@@ -1,6 +1,7 @@
 let  cantidad = document.getElementById('cantidad');
 let boton = document.getElementById('crear');
 let clave =  document.getElementById('clave');
+let contrasena = document.getElementById('clave').value;
 
 
 //caracteres para generar la contraseña
@@ -31,3 +32,23 @@ for(let i= 0; i < numeroDigitado; i++){
 
 clave.value = contraseña;
 }
+function copiarContrasena() {
+    
+    // Verificamos si hay una contraseña generada
+    if (contrasena !== "") {
+        // Copiamos la contraseña al portapapeles
+        navigator.clipboard.writeText(contrasena)
+            .then(() => {
+                alert('Contraseña copiada al portapapeles');
+                // Después de copiar, borramos el campo de la contraseña
+                document.getElementById('clave').value = "";
+            })
+            .catch(err => {
+                console.error('Error al copiar: ', err);
+            });
+    } else {
+        alert('Primero genera una contraseña');
+    }
+}
+
+
