@@ -19,7 +19,7 @@ function crear(){
 }
 //condiciones.
 for(let i=0; i < numeroDigitado; i++){
-    
+    let indiceAleatorio = Math.random() * cadenaCaracteres.length;
 }
 
 
