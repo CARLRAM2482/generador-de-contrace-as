@@ -1,1 +1,0 @@
-var cantidad = 6;
